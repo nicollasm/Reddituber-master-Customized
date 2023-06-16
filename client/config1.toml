@@ -1,0 +1,67 @@
+[settings]
+storymode = true
+storymodemethod = 0
+storymode_max_length = 6000
+max_allowed_com = 10000
+allow_comment = false
+allow_title = true
+allow_title_picture = true
+allow_nsfw = false
+auto_selection = false
+theme = "dark"
+times_to_run = 1
+opacity = 0.9
+transition = 0.2
+fps = 30
+vwidth = 1920
+bitrate = "6M"
+resolution_w = "1080"
+resolution_h = "1920"
+len = 20
+crop = true
+no_repeate = true
+manul_data = false
+fast_render = true
+use_temp = false
+
+[fonts]
+single_word_font_size = 150
+title_font_size = 40
+normal_font_size = 30
+title_font = "Roboto-Bold.ttf"
+normal_font = "Roboto-Regular.ttf"
+
+[image]
+bg_is_transparent = false
+bg_trans = 255
+dark_bg_color = [ 0, 0, 0,]
+dark_text_color = [ 215, 218, 220,]
+light_bg_color = [ 255, 255, 255,]
+light_text_color = [ 0, 0, 0,]
+max_im_w_story = 1000
+
+
+
+[settings.background]
+background_choice = "minecraft"
+
+[settings.tts]
+voice_choice = "edge"
+edge_voice = "en-US-SteffanNeural"
+aws_polly_voice = "Matthew"
+streamlabs_polly_voice = "Matthew"
+tiktok_voice = "en_us_002"
+python_voice = "1"
+py_voice_num = "2"
+silence_duration = 0.3
+edge_speed = 10
+
+[reddit.thread]
+random = false
+subreddit = "dating_advice"
+post_id = "135x5ty"
+max_comment_length = 500
+min_comment_length = 10
+post_lang = ""
+min_comments = 20
+

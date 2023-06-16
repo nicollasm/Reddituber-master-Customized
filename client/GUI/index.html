@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+{% block main %}
+<style>
+    .run{
+        display: flex;
+        justify-content:space-between;
+        /* align-items: center; */
+        width: 100%;
+        /* background-color: rgb(212, 212, 212); */
+        padding: .4rem;
+        min-height: 90vh;
+        background-color:rgb(223, 223, 223)
+    }
+    /* .run >*{
+        outline: 2px solid black;
+    } */
+</style>
+<div class="container">
+    <div class="run ">
+        <!-- <h1 class="">Reddituber</h1>
+    
+    <p>To run to bot press on this button</p> -->
+
+    <title>Slider Example</title>
+    <style>
+        #slider {
+            width: 300px;
+        }
+    </style>
+        <input type="range" id="slider" min="0" max="100" value="0" step="1">
+        <br>
+        <input type="color" id="colorPicker" value="#000000">
+        <br>
+        <img id="image" src="\tempimg.png" alt="Updated Image">
+        
+        <script>
+            var slider = document.getElementById("slider");
+            var colorPicker = document.getElementById("colorPicker");
+            var image = document.getElementById("image");
+    
+            slider.addEventListener("input", function() {
+                var value = slider.value;
+                updateImage(value);
+            });
+    
+            colorPicker.addEventListener("input", function() {
+                                                                var color = colorPicker.value;
+                                                                updateImage(slider.value, color);
+                                                            });
+    
+            function updateImage(value, color) {
+                // Make a request to the server to get the updated image URL
+                var url = "/update-image?value=" + value + "&color=" + color;
+                // You can replace the URL above with your server endpoint
+    
+                // Make an AJAX request
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url, true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // Update the image source with the response from the server
+                        var imageUrl = xhr.responseText;
+                        image.src = imageUrl;
+                    }
+                };
+                xhr.send();
+            }
+        </script>
+
+    <div class="col md"><button>asd</button></div>
+    <form action="/run" method="post" target="_parent"> 
+        <input class="btn btn-primary" type="submit" value="Run">
+    </form>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
