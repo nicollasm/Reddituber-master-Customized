@@ -36,7 +36,7 @@ __VERSION__ = "2.6.0"
 def main(POST_ID=None) -> None:
     global reddit_object
     reddit_object = get_subreddit_threads(POST_ID)
-    # redditid  = id(reddit_object)
+    # redditid  = id(reddit_object)n
     length, number_of_comments, audio_durations = save_text_to_mp3(reddit_object)
     # length = math.ceil(length)
     get_screenshots_of_reddit_posts(reddit_object, number_of_comments)

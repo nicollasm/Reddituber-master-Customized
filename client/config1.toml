@@ -1,5 +1,5 @@
 [settings]
-storymode = false
+storymode = true
 storymodemethod = 1
 storymode_max_length = 1000
 max_allowed_com = 30
