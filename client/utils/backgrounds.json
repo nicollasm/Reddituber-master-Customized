@@ -48,17 +48,22 @@
         "swag",
         "center"
     ],
-    "subway":[
+    "subway": [
         "",
         "surfer.webm",
         "zakporter16",
         "center"
     ],
-    "subway2":[
+    "subway2": [
         "",
         "surfer.mp4",
         "zakporter16",
         "center"
+    ],
+    "satisfying1hour": [
+        "https://www.youtube.com/watch?v=d8vpIg1fWGA",
+        "satisfying1hour.mp4",
+        "satisfyingvideos",
+        "center"
     ]
-
 }

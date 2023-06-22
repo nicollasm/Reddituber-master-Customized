@@ -1,8 +1,8 @@
 [settings]
-storymode = true
-storymodemethod = 0
-storymode_max_length = 6000
-max_allowed_com = 10000
+storymode = false
+storymodemethod = 1
+storymode_max_length = 1000
+max_allowed_com = 30
 allow_comment = false
 allow_title = true
 allow_title_picture = true
@@ -25,43 +25,49 @@ fast_render = true
 use_temp = false
 
 [fonts]
-single_word_font_size = 150
+normal_font = "Roboto-Regular.ttf"
+title_font = "Roboto-Bold.ttf"
 title_font_size = 40
 normal_font_size = 30
-title_font = "Roboto-Bold.ttf"
-normal_font = "Roboto-Regular.ttf"
+single_word_font_size = 150
 
 [image]
 bg_is_transparent = false
-bg_trans = 255
+bg_trans = 200
 dark_bg_color = [ 0, 0, 0,]
 dark_text_color = [ 215, 218, 220,]
 light_bg_color = [ 255, 255, 255,]
 light_text_color = [ 0, 0, 0,]
-max_im_w_story = 1000
+max_im_w_story = 600
 
-
+[pereference]
+manual_text_correct = false
 
 [settings.background]
-background_choice = "minecraft"
+background_choice = ""
 
 [settings.tts]
-voice_choice = "edge"
-edge_voice = "en-US-SteffanNeural"
+voice_choice = "tiktok"
 aws_polly_voice = "Matthew"
 streamlabs_polly_voice = "Matthew"
-tiktok_voice = "en_us_002"
+tiktok_voice = "br_004"
 python_voice = "1"
 py_voice_num = "2"
-silence_duration = 0.3
+edge_voice = "en-US-SteffanNeural"
 edge_speed = 10
+
+[reddit.creds]
+client_id = "mwQ91OhCt3kVjenwiQwJqQ"
+client_secret = "NPbnsee8CY2Tsz93EuJ6leysBI5edg"
+username = "Murdock_NC"
+password = "RvljSqK2/'BuDtD;"
+2fa = false
 
 [reddit.thread]
 random = false
-subreddit = "dating_advice"
-post_id = "135x5ty"
+subreddit = "PergunteReddit"
+post_id = ""
 max_comment_length = 500
-min_comment_length = 10
+min_comment_length = 1
 post_lang = ""
 min_comments = 20
-
