@@ -1,7 +1,7 @@
 Pillow==9.5.0
 toml==0.10.2
 translators==5.7.6
-numpy==1.24.3
+numpy==1.26.1
 gTTS==2.2.4
 aiohttp==3.8.4
 ffmpeg-python==0.2.0
