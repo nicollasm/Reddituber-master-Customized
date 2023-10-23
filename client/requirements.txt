@@ -13,7 +13,7 @@ playwright==1.33.0
 pyttsx3==2.90
 pytube==15.0.0
 requests==2.30.0
-rich==13.3.5
+rich==13.6.0
 spacy==3.5.3
 thinc==8.1.10
 tomlkit==0.11.8
